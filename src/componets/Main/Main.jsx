@@ -7,9 +7,9 @@ import "./Main.css";
 const Main = ({ openSideBarToggle }) => {
   return (
     <main className="main-container">
-      <div>
+      <div className="main-content">
         <div className="title">
-          <h6>sort by:</h6>
+          <h6>Sort by:</h6>
           <ul>
             <li>Name</li>
             <li>Newest</li>

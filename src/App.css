@@ -34,10 +34,7 @@ body {
   grid-row: -1/2;
   height: 100%;
 }
-.main-container {
-  grid-area: main;
-  padding: 20px 20px;
-}
+
 /* header styling */
 .header-content {
   display: flex;
@@ -118,26 +115,25 @@ body {
 }
 /* *********************sidebar******************** */
 #sidebar {
-  padding: 20px 35px;
+  padding: 17px 29px;
   background-color: #f3f3f3;
   border-right: 0.1px solid #e4e4e4;
 }
 h4 {
-  margin-bottom: 13px;
+  margin-bottom: 9px;
 }
-
 .product,
 .tags,
 .price h4 {
   color: #1e1e1e;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
   word-wrap: break-word;
 }
 .product,
 .tags {
-  margin-bottom: 28px;
-  padding-bottom: 20px;
+  margin-bottom: 22px;
+  padding-bottom: 7px;
   border-bottom: 1px solid #ddd;
 }
 
@@ -145,7 +141,8 @@ h4 {
   margin-bottom: 4px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 7px;
+  margin-bottom: 11px;
 }
 .cheklist input[type="checkbox"] + label:before {
   width: 20px;
@@ -167,8 +164,9 @@ h4 {
 .amount p {
   background-color: #fff;
   border: 1px solid #ddd;
-  padding: 10px 10px;
-  font-size: 12px;
+  padding: 12px 10px;
+  font-size: 14px;
+  color: #a2a2a2;
   border-radius: 4px;
   margin-bottom: 15px;
   cursor: pointer;
@@ -176,16 +174,31 @@ h4 {
   text-align: center;
 }
 .amount p:hover {
-  font-weight: bold;
+  color: black;
 }
+/* .sideIcon{
+  margin-right: 22px;
+  color: red;
+} */
 
-/* main part */
+/* **************** -MAIN PART- ****************** */
 #heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #f3f3f3;
   padding: 10px 20px;
+}
+.main-container {
+  grid-area: main;
+  padding: 20px 40px;
+}
+.main-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+  padding: 8px 15px;
 }
 .title,
 ul {
@@ -194,7 +207,7 @@ ul {
 }
 .title h6 {
   color: #1e1e1e;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   margin-right: 13px;
 }
@@ -206,9 +219,10 @@ ul {
 .title ul li {
   border: 1px solid #eee;
   background-color: #fff;
-  padding: 10px 25px;
+  padding: 8px 25px;
   cursor: pointer;
   transition: 0.5s ease;
+  font-size: 12px;
 }
 .title ul li:hover {
   background-color: black;
@@ -219,7 +233,7 @@ ul {
   font-size: 27px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 14px;
 }
 .main_icon .icongr {
   font-size: 27px;
@@ -227,16 +241,22 @@ ul {
   border: 1px solid #eee;
   cursor: pointer;
 }
-/* card */
+/************ - CARD - *************/
+.row{
+  overflow: hidden;
+  overflow-x: scroll;
+}
 .card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 28px;
-  margin-top: 30px;
+  gap: 45px;
+  width: 95%;
+  margin-top: 23px;
 }
 .card_content {
   position: relative;
-  border: 2px solid #eee;
+  border: 1px solid #dddcdc;
+  padding: 6px;
 }
 .image {
   width: 100%;
@@ -245,26 +265,23 @@ ul {
 }
 .image img {
   width: 80%;
-  margin: 5px;
+  margin: 15px;
   height: 120px;
-  margin-left: 30px;
+  margin-left: 10px;
   object-fit: cover;
-}
-.description {
-  padding: 10px;
 }
 .description h6 {
   color: rgba(30, 30, 30, 0.3);
   font-size: 11px;
   font-weight: 700;
-  margin-top: 15px;
+  margin-top: 7px;
 }
 .description p {
   color: #1e1e1e;
   font-size: 14px;
   font-weight: 800;
   line-height: 19px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 .funiture_price {
   display: flex;
@@ -278,13 +295,13 @@ ul {
 }
 .funiture_price span {
   color: #ff842b;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 .dots {
   display: flex;
   align-items: center;
-  gap: 3px;
+  gap: 5px;
 }
 .dot {
   width: 15px;
@@ -370,4 +387,10 @@ ul {
 /* Extra Small <= 576px */
 
 @media screen and (max-width: 576px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+  .main-content{
+    display: none;
+  }
 }
