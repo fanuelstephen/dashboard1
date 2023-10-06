@@ -1,0 +1,37 @@
+/* .Main_side {
+  width: 100%;
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 30px;
+  width: 95%;
+  margin: 0 auto;
+}
+.Main_heading,
+.Main_heading ul,
+.list {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.Main_heading {
+  margin: 8px 25px;
+  height: 54px;
+  width: 95%;
+  background-color: #f7f7f7;
+  padding: 30px;
+}
+.Main_heading ul li {
+  background-color: #fff;
+  padding: 10px 30px;
+  border: 2px solid #f7f7f7;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.Main_heading ul li:hover {
+  background-color: black;
+  color: #fff;
+} */

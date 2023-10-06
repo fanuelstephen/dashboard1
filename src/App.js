@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Header from "./componets/Header/Header";
+import Main from "./componets/Main/Main";
+import Sidebar from "./componets/SIdebar/Sidebar";
 
 function App() {
+  const [openSideBarToggle, setOpenSideBarToggle] = useState(false);
+
+  const openNav = () => {
+    setOpenSideBarToggle(!openSideBarToggle);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="grid_container">
+      <Header openNav={openNav} />
+      <Sidebar openSideBarToggle={openSideBarToggle} />
+      <Main openSideBarToggle={openSideBarToggle} />
     </div>
   );
 }
