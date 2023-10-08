@@ -10,6 +10,7 @@ function App() {
   const openNav = () => {
     setOpenSideBarToggle(!openSideBarToggle);
   };
+  
   return (
     <div className="grid_container">
       <Header openNav={openNav} />

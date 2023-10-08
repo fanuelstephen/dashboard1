@@ -3,6 +3,7 @@ import { GiPin } from "react-icons/gi";
 import { AiTwotoneFire } from "react-icons/ai";
 import { BiSolidCheckboxChecked } from "react-icons/bi";
 import { FaCrown } from "react-icons/fa";
+
 const Sidebar = ({ openSideBarToggle }) => {
   return (
     <aside id="sidebar" className={openSideBarToggle ? "nav_responsive" : ""}>

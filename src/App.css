@@ -28,7 +28,12 @@ body {
   grid-column: 1/5;
   padding: 20px 30px;
   border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: white;
 }
+
 .sidebar {
   grid-area: sidebar;
   grid-row: -1/2;
@@ -118,6 +123,8 @@ body {
   padding: 17px 29px;
   background-color: #f3f3f3;
   border-right: 0.1px solid #e4e4e4;
+  overflow-y: scroll;
+  
 }
 h4 {
   margin-bottom: 9px;
@@ -192,6 +199,7 @@ h4 {
 .main-container {
   grid-area: main;
   padding: 20px 40px;
+  overflow-y: scroll;
 }
 .main-content{
   display: flex;
@@ -331,6 +339,7 @@ ul {
 /* Medium <= 992px */
 @media screen and (max-width: 992px) {
   .grid_container {
+    position: relative;
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 3fr;
     grid-template-areas:
@@ -346,6 +355,7 @@ ul {
   }
   #sidebar {
     display: none;
+    
   }
   .menu_icon {
     display: inline;
@@ -358,7 +368,7 @@ ul {
     display: none;
   }
   .nav_responsive {
-    position: absolute;
+   position: sticky;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     top: 12.3%;
@@ -386,9 +396,7 @@ ul {
   .menu_icon {
     font-size: 36px;
 }
-.nav_responsive {
-  top: 12.3%;
-}
+
 }
 
 /* Extra Small <= 576px */
@@ -403,9 +411,7 @@ ul {
   .menu_icon {
     font-size: 36px;
 }
-.nav_responsive {
-  top: 12.3%;
-}
+
 }
 /* Extra Small <= 320px */
 @media screen and (max-width: 320px){
@@ -418,8 +424,5 @@ ul {
   }
   .menu_icon {
     font-size: 36px;
-}
-.nav_responsive {
-  top: 12.3%;
 }
 }
