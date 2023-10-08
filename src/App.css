@@ -368,14 +368,13 @@ ul {
     display: none;
   }
   .nav_responsive {
-   position: sticky;
+   position: absolute;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    top: 12.3%;
     overflow-y: auto;
     display: inline !important;
     width: 100%;
-    z-index: 9999;
+    z-index: 1;
   }
   .menu_icon {
     font-size: 36px;
