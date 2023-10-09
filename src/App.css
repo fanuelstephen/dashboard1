@@ -257,7 +257,7 @@ ul {
 .card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 45px;
+  column-gap: 45px;
   width: 95%;
   margin-top: 23px;
 }
@@ -265,6 +265,9 @@ ul {
   position: relative;
   border: 1px solid #dddcdc;
   padding: 6px;
+  margin-bottom: 45px;
+  
+ 
 }
 .image {
   width: 100%;
@@ -289,12 +292,13 @@ ul {
   font-size: 14px;
   font-weight: 800;
   line-height: 19px;
-  margin-bottom: 8px;
+
 }
 .funiture_price {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 8px;
 }
 .funiture_price p {
   color: #ff842b;
@@ -349,9 +353,11 @@ ul {
   }
   .card {
     grid-template-columns: repeat(3, 1fr);
-    /* width: 585px; */
     width: 100%;
-    gap: 28px;
+    column-gap: 45px;
+  }
+  .card_content{
+    margin-bottom: 45px;
   }
   #sidebar {
     display: none;
@@ -381,7 +387,6 @@ ul {
 }
 }
 /* Small <= 768px */
-
 @media screen and (max-width: 768px) {
   #nav-list {
     display: none;
@@ -389,8 +394,10 @@ ul {
   .card {
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    gap: 10px;
-    margin-bottom: 0;
+  column-gap: 40px;
+  }
+  .card_content{
+    margin-bottom: 40px;
   }
   .menu_icon {
     font-size: 36px;
@@ -402,7 +409,12 @@ ul {
 
 @media screen and (max-width: 576px) {
   .card {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 35px;
+   
+  }
+  .card_content {
+    margin-bottom: 35px;
   }
   .main-content{
     display: none;
@@ -414,6 +426,13 @@ ul {
 }
 /* Extra Small <= 320px */
 @media screen and (max-width: 320px){
+  .card {
+    grid-template-columns: 1fr;
+  }
+  .card_content {
+    margin-bottom: 25px;
+  }
+
   .logo {
     gap: 5px;
     margin-right: 10px;
