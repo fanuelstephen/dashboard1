@@ -409,12 +409,10 @@ ul {
 
 @media screen and (max-width: 576px) {
   .card {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 35px;
-   
+    grid-template-columns: 1fr;
   }
   .card_content {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
   .main-content{
     display: none;
@@ -426,12 +424,7 @@ ul {
 }
 /* Extra Small <= 320px */
 @media screen and (max-width: 320px){
-  .card {
-    grid-template-columns: 1fr;
-  }
-  .card_content {
-    margin-bottom: 25px;
-  }
+ 
 
   .logo {
     gap: 5px;
