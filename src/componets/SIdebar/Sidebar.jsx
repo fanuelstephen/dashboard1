@@ -1,8 +1,5 @@
 import React from "react";
-import { GiPin } from "react-icons/gi";
-import { AiTwotoneFire } from "react-icons/ai";
-import { BiSolidCheckboxChecked } from "react-icons/bi";
-import { FaCrown } from "react-icons/fa";
+
 
 const Sidebar = ({ openSideBarToggle }) => {
   return (
@@ -54,8 +51,8 @@ const Sidebar = ({ openSideBarToggle }) => {
         <form className="Form">
           <div className="cheklist">
             <input type="checkbox" id="store" name="store" value="store" />
-            <label for="store"> Oficial store</label> 
-            <FaCrown className="sideIcon"/>
+            <label for="store"> Oficial store 👑</label> 
+            
             <br />
           </div>
           <div className="cheklist">
@@ -65,8 +62,8 @@ const Sidebar = ({ openSideBarToggle }) => {
               name="Recomended"
               value="Recomended"
             />
-            <label for="kitchen">Recomended</label>
-            <BiSolidCheckboxChecked  className="sideIcon"/>
+            <label for="kitchen">Recomended✅</label>
+           
             <br />
           </div>
           <div className="cheklist">
@@ -76,7 +73,7 @@ const Sidebar = ({ openSideBarToggle }) => {
               name="Product"
               value="Product"
             />
-            <label for="Product">Top Product</label> <GiPin  className="sideIcon"/> <br />
+            <label for="Product">Top Product📌</label> 
           </div>
           <div className="cheklist">
             <input
@@ -85,8 +82,8 @@ const Sidebar = ({ openSideBarToggle }) => {
               name="Trending"
               value="Trending"
             />
-            <label for="Trending">Trending</label>
-            <AiTwotoneFire className="sideIcon" /> <br />
+            <label for="Trending">Trending🔥</label>
+            <br />
           </div>
         </form>
       </div>
