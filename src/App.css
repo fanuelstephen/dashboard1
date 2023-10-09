@@ -330,15 +330,23 @@ ul {
   background-color: #6f5353;
 }
 /*  love icon */
-.mainIcon {
+.loveIcon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 8%;
   right: 10%;
-  color: #ff842b;
   text-align: center;
   border-radius: 50%;
+  padding: 4px;
+  border: 1px solid #dddcdc;;
+  background-color: #fff;
 }
-
+.mainIcon {
+  color: #ff842b;
+  
+}
 /* media quesirs */
 /* Medium <= 992px */
 @media screen and (max-width: 992px) {

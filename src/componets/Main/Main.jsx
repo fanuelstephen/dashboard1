@@ -3,7 +3,7 @@ import { MainData } from "../DashbordData/Data";
 import Card from "../Card/Card";
 import { GrFormNext } from "react-icons/gr";
 import { GrFormPrevious } from "react-icons/gr";
-import "./Main.css";
+
 
 const Main = ({ openSideBarToggle }) => {
   return (

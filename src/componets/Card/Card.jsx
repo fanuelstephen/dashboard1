@@ -1,6 +1,5 @@
 import React from "react";
-import "./Card.css";
-import { GiSelfLove } from "react-icons/gi";
+import { VscHeart} from "react-icons/vsc";
 
 const Card = ({ FunitureDescription }) => {
   return (
@@ -25,7 +24,7 @@ const Card = ({ FunitureDescription }) => {
           </div>
         </div>
         <div className="loveIcon">
-          <GiSelfLove className="mainIcon" />
+          <VscHeart className="mainIcon" />
         </div>
       </div>
 
@@ -49,7 +48,7 @@ const Card = ({ FunitureDescription }) => {
           </div>
         </div>
         <div className="loveIcon">
-          <GiSelfLove className="mainIcon" />
+          <VscHeart className="mainIcon" />
         </div>
       </div>
     </div>

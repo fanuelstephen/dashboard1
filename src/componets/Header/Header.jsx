@@ -1,5 +1,4 @@
 import React from "react";
-import "./Header.css";
 import { HeadeData } from "../DashbordData/Data";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { AiOutlineMessage } from "react-icons/ai";
