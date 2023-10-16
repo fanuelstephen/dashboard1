@@ -10,8 +10,8 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 const Header = ({ openNav, openSideBarToggle }) => {
   return (
     <header className="header">
-      {HeadeData.map((val) => (
-        <div className="header-content">
+      {HeadeData.map((val, index) => (
+        <div className="header-content" key={index}>
           <div className="left">
             <div className="nav">
               <div className="logo">

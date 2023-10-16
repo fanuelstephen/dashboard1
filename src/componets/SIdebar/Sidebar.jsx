@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Sidebar = ({ openSideBarToggle }) => {
   return (
     <aside id="sidebar" className={openSideBarToggle ? "nav_responsive" : ""}>
@@ -14,7 +13,7 @@ const Sidebar = ({ openSideBarToggle }) => {
               name="Funiture"
               value="Funiture"
             />
-            <label for="Funiture1"> Funiture(1439)</label> <br />
+            <label htmlFor="Funiture1"> Funiture(1439)</label> <br />
           </div>
           <div className="cheklist">
             <input
@@ -23,7 +22,7 @@ const Sidebar = ({ openSideBarToggle }) => {
               name="workspaces"
               value="workspaces"
             />
-            <label for="kitchen"> Workspaces(302)</label> <br />
+            <label htmlFor="kitchen"> Workspaces(302)</label> <br />
           </div>
           <div className="cheklist">
             <input
@@ -32,7 +31,7 @@ const Sidebar = ({ openSideBarToggle }) => {
               name="kitchen"
               value="kitchen"
             />
-            <label for="kitchen"> Kitchen(110)</label> <br />
+            <label htmlFor="kitchen"> Kitchen(110)</label> <br />
           </div>
           <div className="cheklist">
             <input
@@ -41,7 +40,7 @@ const Sidebar = ({ openSideBarToggle }) => {
               name="bathroom"
               value="bathroom"
             />
-            <label for="bathroom"> Bathroom(382)</label> <br />
+            <label htmlFor="bathroom"> Bathroom(382)</label> <br />
           </div>
         </form>
       </div>
@@ -51,8 +50,8 @@ const Sidebar = ({ openSideBarToggle }) => {
         <form className="Form">
           <div className="cheklist">
             <input type="checkbox" id="store" name="store" value="store" />
-            <label for="store"> Oficial store 👑</label> 
-            
+            <label htmlFor="store"> Oficial store 👑</label>
+
             <br />
           </div>
           <div className="cheklist">
@@ -62,8 +61,8 @@ const Sidebar = ({ openSideBarToggle }) => {
               name="Recomended"
               value="Recomended"
             />
-            <label for="kitchen">Recomended✅</label>
-           
+            <label htmlFor="kitchen">Recomended✅</label>
+
             <br />
           </div>
           <div className="cheklist">
@@ -73,7 +72,7 @@ const Sidebar = ({ openSideBarToggle }) => {
               name="Product"
               value="Product"
             />
-            <label for="Product">Top Product📌</label> 
+            <label htmlFor="Product">Top Product📌</label>
           </div>
           <div className="cheklist">
             <input
@@ -82,7 +81,7 @@ const Sidebar = ({ openSideBarToggle }) => {
               name="Trending"
               value="Trending"
             />
-            <label for="Trending">Trending🔥</label>
+            <label htmlFor="Trending">Trending🔥</label>
             <br />
           </div>
         </form>

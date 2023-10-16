@@ -1,11 +1,20 @@
-import React from "react";
-import { MainData } from "../DashbordData/Data";
+import React, { useState, useEffect } from "react";
+// import { MainData } from "../DashbordData/Data";
 import Card from "../Card/Card";
 import { GrFormNext } from "react-icons/gr";
 import { GrFormPrevious } from "react-icons/gr";
 
-
 const Main = ({ openSideBarToggle }) => {
+  const [apiData, setData] = useState([]);
+  useEffect(() => {
+    async function getData() {
+      const response = await fetch("https://fakestoreapi.com/products");
+      const apiData = await response.json();
+      setData(apiData);
+    }
+    getData();
+  }, []);
+
   return (
     <main className="main-container">
       <div className="main-content">
@@ -25,8 +34,10 @@ const Main = ({ openSideBarToggle }) => {
       </div>
 
       <div className="card">
-        {MainData.map((item) => (
-          <Card FunitureDescription={item} />
+        {apiData.map((item, i) => (
+          <div key={i}>
+            <Card FunitureDescription={item} />
+          </div>
         ))}
       </div>
     </main>
